@@ -13,7 +13,7 @@
 :root {
   --main-colour: rgba(30, 166, 203, 255);
   --secondary-colour: rgba(249, 249, 249, 255);
-  --tertiary-colour: rgba(63, 116, 148, 255);
+  --tertiary-colour: rgba(71, 139, 187, 255);
   --primary-font: "Work Sans", sans-serif;
   /* --secondary-font: ; */
   --primary-font-colour: black;
@@ -76,6 +76,11 @@ img {
   max-width: 100%;
 }
 /*Footer*/
+footer {
+  text-align: center;
+  padding: 2%;
+  border-top: 1px solid#a7a7a7;
+}
 
 /*Media quaries*/
 @supports (display: grid) {
