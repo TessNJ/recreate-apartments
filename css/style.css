@@ -1,0 +1,19 @@
+/* General setup */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Variables */
+:root {
+  --main-colour: ;
+  --secondary-colour: ;
+  --primary-font: ;
+  --secondary-font: ;
+  --font-colour: ;
+  --primary-font-size: ;
+  --secondary-font-size: ;
+}
