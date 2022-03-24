@@ -22,7 +22,10 @@
   --primary-font-size: 1rem;
   --secondary-font-size: 2rem;
 }
-
+/*Body*/
+body {
+  background-color: var(--secondary-colour);
+}
 /*Header*/
 header li {
   list-style: none;
@@ -44,9 +47,19 @@ header h1 {
   font-size: var(--secondary-font-size);
 }
 .youAreHere {
-  color: var(--main-colour);
+  color: var(--tertiary-colour);
 }
-
+header button {
+  border: 1px solid var(--main-colour);
+  color: var(--main-colour);
+  background-color: var(--secondary-colour);
+  border-radius: 0.3rem;
+  padding: 0% 0.5%;
+}
+header button:hover {
+  box-shadow: 0 0 1rem #a7a7a7;
+  text-shadow: 0 0 1rem #a7a7a7;
+}
 /*Main*/
 main {
   display: grid;
