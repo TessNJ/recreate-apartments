@@ -19,11 +19,33 @@
   --primary-font-colour: black;
   --secondary-font-colour: grey;
   --tertiary-font-colour: white;
-  --primary-font-size: 1.2vw;
-  --secondary-font-size: 1vw;
+  --primary-font-size: 1rem;
+  --secondary-font-size: 2rem;
 }
 
 /*Header*/
+header li {
+  list-style: none;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+header {
+  padding: 2% 3%;
+}
+header h1 {
+  font-weight: 100;
+  font-size: var(--secondary-font-size);
+}
+.youAreHere {
+  color: var(--main-colour);
+}
 
 /*Main*/
 main {
@@ -32,6 +54,10 @@ main {
   grid-row-gap: 1.5rem;
   grid-column-gap: 1rem;
   justify-content: space-around;
+  font-size: var(--primary-font-size);
+}
+main p {
+  color: var(--secondary-font-colour);
 }
 img {
   max-width: 100%;
