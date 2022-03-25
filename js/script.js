@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoader", init);
+window.addEventListener("DOMContentLoaded", init);
 
 function init(event) {
   getData();
