@@ -104,7 +104,7 @@ main p {
 }
 .view_more {
   background-color: var(--main-colour);
-  padding: 2% 3%;
+  padding: 5% 3%;
 }
 .links {
   text-align: center;
