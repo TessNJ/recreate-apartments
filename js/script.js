@@ -11,6 +11,27 @@ async function getData() {
   showPosts(await result.json());
 }
 
-function showPosts(posts) {
-  console.log(posts);
+function showPosts(apartment) {
+  const template = document.querySelector("#main_template").content;
+
+  apartment.forEach((place) => {
+    const templateClone = template.cloneNode(true);
+    //change content
+
+    templateClone.querySelector("h3").textContent = place.title.rendered;
+
+    templateClone.querySelector("h3:last-of-type").textContent =
+      place._embedded["wp:term"][0][0].name +
+      ", " +
+      place._embedded["wp:term"][0][1].name;
+    templateClone.querySelector(".beds li").textContent = place.bed;
+    templateClone.querySelector(".baths li").textContent = place.bath;
+    templateClone.querySelector(".space li").textContent = place.square_feet;
+    templateClone.querySelector("img").src =
+      place._embedded[
+        "wp:featuredmedia"
+      ][0].media_details.sizes.medium.source_url;
+    //end content
+    document.querySelector("main").appendChild(templateClone);
+  });
 }
