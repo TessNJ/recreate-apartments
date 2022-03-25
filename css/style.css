@@ -97,11 +97,20 @@ main p {
 .Info {
   background-color: var(--secondary-colour);
   border-top: 2px solid rgb(236, 236, 236);
-  padding: 6% 3%;
+  padding: 6% 0%;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
 }
+.Info li {
+  list-style: none;
+  color: var(--secondary-font-colour);
+}
+.Info ul {
+  width: 20%;
+  padding-left: 0%;
+}
+
 .view_more {
   background-color: var(--main-colour);
   padding: 5% 3%;
@@ -113,12 +122,6 @@ main p {
   display: block;
   text-decoration: none;
   color: var(--tertiary-font-colour);
-}
-.deviderHere {
-  border-right: 1px solid rgb(236, 236, 236);
-  padding-left: 11%;
-  border-left: 1px solid rgb(236, 236, 236);
-  padding-right: 11%;
 }
 
 /*Footer*/
