@@ -16,11 +16,11 @@
   --tertiary-colour: rgba(71, 139, 187, 255);
   --primary-font: "Work Sans", sans-serif;
   /* --secondary-font: ; */
-  --primary-font-colour: black;
+  --primary-font-colour: rgb(95, 95, 95);
   --secondary-font-colour: grey;
   --tertiary-font-colour: white;
   --primary-font-size: 1rem;
-  --secondary-font-size: 2rem;
+  --secondary-font-size: 1.4rem;
 }
 /*Body*/
 body {
@@ -29,6 +29,7 @@ body {
 /*Header*/
 header li {
   list-style: none;
+  color: var(--primary-font-colour);
 }
 header nav {
   display: flex;
@@ -41,6 +42,7 @@ header ul {
 }
 header {
   padding: 2% 3%;
+  color: var(--primary-font-colour);
 }
 header h1 {
   font-weight: 100;
@@ -54,11 +56,13 @@ header button {
   color: var(--main-colour);
   background-color: var(--secondary-colour);
   border-radius: 0.3rem;
-  padding: 0% 0.5%;
+  padding: 0.7% 1.5%;
+  font-size: var(--primary-font-size);
 }
 header button:hover {
-  box-shadow: 0 0 1rem #a7a7a7;
-  text-shadow: 0 0 1rem #a7a7a7;
+  box-shadow: 0 0 1rem #8d8d8d;
+  background-color: var(--main-colour);
+  color: var(--tertiary-font-colour);
 }
 /*Main*/
 main {
@@ -72,24 +76,35 @@ main {
 main p {
   color: var(--secondary-font-colour);
 }
-img {
-  max-width: 100%;
-}
 .cards {
-  background-color: var(--secondary-colour);
-  border: 2px solid rgb(167, 167, 167);
+  background-color: white;
+  border: 2px solid rgb(202, 202, 202);
   border-radius: 1%;
-  margin: 0;
   display: flex;
   flex-direction: column;
 }
-.cards div,
-.cards h3 {
-  padding: 2% 3%;
+
+.adress h3 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: var(--secondary-font-size);
+}
+.adress {
+  padding: 5% 3%;
+  color: var(--primary-font-colour);
 }
 
+.Info {
+  background-color: var(--secondary-colour);
+  border-top: 2px solid rgb(236, 236, 236);
+  padding: 6% 3%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
 .view_more {
   background-color: var(--main-colour);
+  padding: 2% 3%;
 }
 .links {
   text-align: center;
@@ -98,6 +113,12 @@ img {
   display: block;
   text-decoration: none;
   color: var(--tertiary-font-colour);
+}
+.deviderHere {
+  border-right: 1px solid rgb(236, 236, 236);
+  padding-left: 11%;
+  border-left: 1px solid rgb(236, 236, 236);
+  padding-right: 11%;
 }
 
 /*Footer*/
