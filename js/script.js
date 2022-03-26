@@ -13,7 +13,6 @@ async function getData() {
 
 function showPosts(apartment) {
   const template = document.querySelector("#main_template").content;
-
   apartment.forEach((place) => {
     const templateClone = template.cloneNode(true);
     //change content
@@ -34,4 +33,5 @@ function showPosts(apartment) {
     //end content
     document.querySelector("main").appendChild(templateClone);
   });
+  document.querySelector(".cards").classList.add("hours");
 }

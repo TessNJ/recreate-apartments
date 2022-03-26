@@ -151,6 +151,17 @@ main p {
   pointer-events: none;
 }
 
+.hours:before {
+  content: url("/assets/hours3.0.svg");
+  padding: 2%;
+  padding-bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 5%;
+  position: absolute;
+  left: 66%;
+  top: 2%;
+}
+
 /*Footer*/
 footer {
   text-align: center;
@@ -172,6 +183,11 @@ footer {
     background-color: var(--main-colour);
     color: var(--tertiary-font-colour);
   }
+  header h1 {
+    font-size: 2rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
   @media screen and (min-width: 768px) {
     header nav {
       flex-direction: row;
@@ -185,6 +201,7 @@ footer {
     }
     header h1 {
       width: 24%;
+      padding: 0%;
     }
   }
   @media screen and (min-width: 1101px) {
