@@ -144,10 +144,10 @@ main p {
   filter: blur(4px);
 }
 .cards .img_divvv:hover:after {
-  content: url("/assets/hover2.0.svg");
+  content: url("/assets/hover3.0.svg");
   position: absolute;
-  left: 2%;
-  top: 15%;
+  left: 17%;
+  top: 18%;
   pointer-events: none;
 }
 
