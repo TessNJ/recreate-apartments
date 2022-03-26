@@ -139,10 +139,9 @@ main p {
   height: 100%;
   background: cover;
 }
-/* .cards img:hover {
+.cards img:hover {
   filter: blur(4px);
-  content: url("/assets/hover.svg");
-} */
+}
 
 /*Footer*/
 footer {
