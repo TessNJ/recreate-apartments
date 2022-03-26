@@ -144,7 +144,7 @@ main p {
   filter: blur(4px);
 }
 .cards .img_divvv:hover:after {
-  content: url("/assets/hover3.0.svg");
+  content: url("../assets/hover3.0.svg");
   position: absolute;
   left: 17%;
   top: 18%;
@@ -152,7 +152,7 @@ main p {
 }
 
 .hours:before {
-  content: url("/assets/hours3.0.svg");
+  content: url("../assets/hours3.0.svg");
   padding: 2%;
   padding-bottom: 0%;
   background-color: rgba(0, 0, 0, 0.39);
